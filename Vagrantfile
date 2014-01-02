@@ -24,6 +24,7 @@ Vagrant.configure("2") do |config|
       chef.add_recipe "php::module_apc"
       chef.add_recipe "php::module_mysql"
       chef.add_recipe "memcached"
+      chef.add_recipe "mongodb::default"
       chef.json={
           "java"=>{
 		"jdk_version"=>"7"
